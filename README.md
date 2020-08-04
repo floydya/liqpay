@@ -17,8 +17,27 @@ npm run start
 docker-compose -f docker-compose.production.yml up
 ```
 
+#### curl request example:
+```shell script
+curl --location --request POST 'http://localhost:5000' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "public_key": "i00000000000",
+    "private_key": "testtesttesttesttesttesttesttesttesttest",
+    "method": "checkout",
+    "params": {
+        "action": "pay",
+        "amount": "100",
+        "currency": "UAH",
+        "description": "test",
+        "order_id": "order_id_1",
+        "version": "3"
+    }
+}'
+```
 
-#### Request example:
+
+#### Request body example:
 ```json
 {
     "public_key": "i00000000000",
@@ -30,7 +49,8 @@ docker-compose -f docker-compose.production.yml up
         "currency": "UAH",
         "description": "test",
         "order_id": "order_id_1",
-        "version": "3"
+        "version": "3",
+        ["name"]: "value"
     }
 }
 ```
