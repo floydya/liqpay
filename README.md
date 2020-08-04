@@ -13,7 +13,6 @@ npm run start
 ```
 
 #### Starting production server(using deployed package):
-
 ```shell script
 docker-compose -f docker-compose.production.yml up
 ```
@@ -35,3 +34,4 @@ docker-compose -f docker-compose.production.yml up
     }
 }
 ```
+Full documentation: https://www.liqpay.ua/documentation/en/api/home/
