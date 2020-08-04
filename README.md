@@ -1,19 +1,25 @@
 
 
-### Starting server:
+#### Starting development server:
 ```shell script
 docker-compose up --build
 ```
 
 
-### Development environment:
+#### Starting local development environment:
 ```shell script
 npm ci
 npm run start
 ```
 
+#### Starting production server(using deployed package):
 
-###Request example:
+```shell script
+docker-compose -f docker-compose.production.yml up
+```
+
+
+#### Request example:
 ```json
 {
     "public_key": "i00000000000",

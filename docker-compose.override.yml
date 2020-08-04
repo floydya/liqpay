@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+
+  liqpay:
+#    uncomment next lines to change service port
+#    environment:
+#      PORT: 5000
+#    expose:
+#      - 5000

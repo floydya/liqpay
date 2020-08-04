@@ -6,8 +6,3 @@ services:
     build:
       dockerfile: Dockerfile
       context: ./
-#    uncomment next lines to change service port
-#    environment:
-#      PORT: 5000
-#    expose:
-#      - 5000

@@ -1,0 +1,6 @@
+version: '3.7'
+
+services:
+
+  liqpay:
+    image: docker.pkg.github.com/floydya/liqpay/webservice:latest
