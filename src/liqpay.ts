@@ -18,7 +18,7 @@ export default class LiqPay {
     host: string;
 
     static required_fields: string[] = [
-        "version", "amount", "currency", "description", "order_id", "public_key"
+        "version", "amount", "currency", "description", "order_id"
     ];
 
     constructor(publicKey: string, privateKey: string, host: string = "https://www.liqpay.ua/api") {
